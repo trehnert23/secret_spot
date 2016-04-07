@@ -32,7 +32,6 @@ html, body {
 .destination_body {
   background-image: url('https://images.unsplash.com/photo-1420553850395-dccec107a66d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e8c7146426f7a40d0fc5fe34497fe9d8');
   background-size: 100%;
-  /*background-position: 0px -400px;*/
   background-attachment: fixed;
   background-repeat: no-repeat;
 }

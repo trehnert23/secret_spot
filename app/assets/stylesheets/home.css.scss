@@ -1,12 +1,19 @@
 .home {
-	background-color: #3498DB;
-	box-shadow: 0px 3px 0px red inset;
+	background-image: url('https://images.unsplash.com/photo-1445098344978-4080e28b6355?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=5f22ab1f1647ca7d04b7a381edd342c1');
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: 0px -300px;
+	background-repeat: no-repeat;
 }
 
 .home_body {
-  background-color: #3498DB;
+  background-color: transparent;
   overflow: hidden;
   margin-top: 10%;
+}
+
+.home_box {
+	margin-top: 15%;
 }
 
 .home_text {
@@ -15,7 +22,7 @@
 	font-size: 8vh;
 	color: white;
 	text-align: center;
-	background-color: #3498DB;
+	background-color: transparent;
 }
 
 .home_text1 {
@@ -24,7 +31,7 @@
 	font-size: 6vh;
 	color: white;
 	text-align: center;
-	background-color: #3498DB;
+	background-color: transparent;
 }
 
 ::-webkit-scrollbar { 
@@ -33,128 +40,74 @@
 
 
 
-
-/*----------------------------------------------*/
-/*               Drip Annimation                */
-/*----------------------------------------------*/
-
-.drop, .wave {
-  margin: 175px auto;
-}
-
-.drop {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  top: -30px;
-  margin: 0 auto;
-  background: #FFF;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  -moz-animation-name: drip;
-  -webkit-animation-name: drip;
-  animation-name: drip;
-  -moz-animation-timing-function: cubic-bezier(1, 0, .91, .19);
-  -webkit-animation-timing-function: cubic-bezier(1, 0, .91, .19);
-  animation-timing-function: cubic-bezier(1, 0, .91, .19);
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-.drop:before {
-  content: "";
+.box {
+  height: 280px;
   position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 30px solid rgba(255, 255, 255, 1);
-  top: -22px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  background-color: rgba(0,0,0,0.8);
 }
 
-.wave {
-  position: relative;
-  opacity: 0;
+.box .first {
+	color: #D3D3D3;
+	text-align: center;
+	font-size: 2.75em;
+}
+
+a.opening_button {
+  position: absolute;
   top: 0;
-  width: 2px;
-  height: 1px;
-  border: #FFF 7px solid;
-  -moz-border-radius: 300px / 150px;
-  -webkit-border-radius: 300px / 150px;
-  border-radius: 300px / 150px;
-  -moz-animation-name: ripple;
-  -webkit-animation-name: ripple;
-  animation-name: ripple;
-  -moz-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #EE3769;
+  border-radius: 8px;
+  height: 4.2em;
+  width: 15em;
+  padding: 0;
+  outline: none;
+  overflow: hidden;
+  color: #EE3769;
+  -webkit-transition: color 0.3s 0.1s ease-out;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+  line-height: 383%;
 }
-
-.wave:after {
-  content: "";
+a.opening_button::before {
   position: absolute;
-  opacity: 0;
-  top: -5px;
-  left: -5px;
-  width: 2px;
-  height: 1px;
-  border: #FFF 5px solid;
-  -moz-border-radius: 300px / 150px;
-  -webkit-border-radius: 300px / 150px;
-  border-radius: 300px / 150px;
-  -moz-animation-name: ripple-2;
-  -webkit-animation-name: ripple-2;
-  animation-name: ripple-2;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 10em;
+  height: 10em;
+  line-height: 20em;
+  left: -5em;
+  text-align: center;
+  -webkit-transition: box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
 }
-
-@keyframes ripple {
-  from {
-    opacity: 1;
-  }
-  to {
-    width: 600px;
-    height: 300px;
-    border-width: 1px;
-    top: -100px;
-    opacity: 0;
-  }
+a.opening_button:hover {
+  color: #fff;
 }
-
-@keyframes ripple-2 {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    width: 200px;
-    height: 100px;
-    border-width: 1px;
-    top: 100px;
-    left: 200px;
-  }
-}
-
-@keyframes drip {
-  to {
-    top: 190px;
-  }
+a.opening_button:hover::before {
+  box-shadow: inset 0 0 0 0 white;
 }
