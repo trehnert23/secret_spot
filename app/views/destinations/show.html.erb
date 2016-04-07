@@ -1,19 +1,22 @@
-<div class="header">
-  <div class="container">
-    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
-    <h1>BokenjiKan</h1>
-  </div>
-</div>
 
-<div class="destination">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <%= image_tag @destination.image %>
-        <h2><%= @destination.name %></h2>
-        <p><%= @destination.description %></p>
-        <%= link_to "Edit", edit_destination_path(@destination) %>
+<body class="destination_body">
+  <div class="show_header">
+      <p><%= @destination.name %></p>
+  </div>
+
+  <hr>
+  <hr>
+
+  <div class="destination">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 destination_card">
+          <%= image_tag @destination.image %>
+          <p class="destination_title">Description: </br></br> <%= @destination.description %></p>
+        </div>
+        <div class="col-lg-2"></div>
       </div>
     </div>
-  </div>
-</div> 
+  </div> 
+</body>

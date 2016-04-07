@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20160204163209) do
 
-  create_table "destinations", force: true do |t|
+  create_table "destinations", force: :cascade do |t|
     t.string   "name"
     t.string   "image"
     t.string   "description"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20160204163209) do
     t.datetime "updated_at"
   end
 
-  create_table "tags", force: true do |t|
+  create_table "tags", force: :cascade do |t|
     t.string   "title"
     t.string   "image"
     t.datetime "created_at"

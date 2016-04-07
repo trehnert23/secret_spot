@@ -18,13 +18,46 @@
 
 html, body {
   margin: 0;
-  font-family: Lobster;
+  font-family: Original Surfer;
+}
+
+.show_body {
+  background-image: url('https://images.unsplash.com/photo-1448814100339-234df1d4005d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e6ccb188b094cba9b093db5efc91978e');
+  background-size: 100%;
+  background-position: 0px -400px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.destination_body {
+  background-image: url('https://images.unsplash.com/photo-1420553850395-dccec107a66d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e8c7146426f7a40d0fc5fe34497fe9d8');
+  background-size: 100%;
+  /*background-position: 0px -400px;*/
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.destination_card {
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 2vh;
+  color: white;
+}
+
+.show_header {
+  text-align: center;
+  font-size: 10vh;
+}
+
+.destination_title {
+  font-size: 20vh;
 }
 
 .header {
-  background-color: #1C6BA0;
+  background-color: transparent;
   height: 140px;
-  text-align: left;
+  text-align: center;
+  font-size: 10vh;
+  margin-bottom: 3vh;
 }
 
 .header img {
@@ -37,7 +70,7 @@ html, body {
   margin: 0;
 }
 
-.tags, .destination {
+.tags {
   margin: 80px 0;
 }
 
@@ -49,8 +82,13 @@ h2 a {
   color: #00217f;
 }
 
+.cards {
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 2vh;
+}
+
 .card {
-  color: #fff;
+  color: white;
   display: block;
   margin: 4px 0;
 }
@@ -74,6 +112,7 @@ h2 a {
 
 .tag h2, .tag .card h2, .destination h2, .destination p {
   padding: 0 20px 0;
+  color: white;
 }
 
 .tag .card p {
@@ -89,8 +128,8 @@ h2 a {
 }
 
 .destination p {
-  color: #0f0f0f;
-  font-size: 14px;
+  color: white;
+  font-size: 5vh;
   font-weight: 300;
 }
 
