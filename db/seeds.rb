@@ -45,7 +45,7 @@ A consistent reef wave that’s absolutely pumping in the spring. The rocks here
 
 These expert wave spotters will also deliver you to some of the finest points that are working on any one day, across the Maldives’ painfully beautiful 1,190 coral islands. 
 
-Getting there: Fly into Male airport and get your live aboard company to pick you up from there. Trips range in duration and price. Visit www.surfatoll.com for details.", image: "http://www.swellnet.com/sites/default/files/styles/swellnet_large_1024x768/public/legacy/13/135690/_RichardKotch_Maldives2013_SW__5.jpg?itok=W3U2a_gd", tag_id: t1.id)
+Getting there: Fly into Male airport and get your live aboard company to pick you up from there. Trips range in duration and price. Visit www.surfatoll.com for details.", image: "http://3.bp.blogspot.com/-DwTmAeg6R6s/VSYXbi39cmI/AAAAAAAAB3M/yEES1d-Uuyw/s1600/richardkotch_29-img_0395.jpg", tag_id: t1.id)
 
 
 Destination.create(name: "Cloud Nine", description: "Siargao Island, Philippines - This dramatic and powerful reef break, which crashes onto shallow razor sharp coral, offers right and left death rides to those who dare.
